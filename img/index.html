@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sea World Ancol</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      position: relative;
+      background-image: url('GAMBARUTAMA.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 123, 255, 0.9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .info-icon {
+      color: #0d6efd;
+      margin-right: 8px;
+    }
+    .carousel-img {
+      border-radius: 15px;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .review-stars {
+      color: #ffc107;
+    }
+    .review-card {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">Ancol</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="tiketDropdown" role="button" data-bs-toggle="dropdown">Tiket & Promo</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tiket Masuk</a></li>
+              <li><a class="dropdown-item" href="#">Promo Spesial</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Acara</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Jelajah Ancol</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aktivitasDropdown" role="button" data-bs-toggle="dropdown">Aktivitas</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Wisata Air</a></li>
+              <li><a class="dropdown-item" href="#">Edukasi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        </ul>
+        <form class="d-flex me-3">
+          <input class="form-control me-2" type="search" placeholder="Cari Liburan Kamu..." aria-label="Search">
+        </form>
+        <div class="d-flex align-items-center">
+          <div class="dropdown me-2">
+            <a class="btn btn-link dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown">
+              <img src="https://flagcdn.com/w40/id.png" width="20" alt="ID"> Bahasa Indonesia
+            </a>
+          </div>
+          <a class="btn btn-primary" href="#">Masuk</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-text">
+      Sea World Ancol
+    </div>
+  </div>
+
+  <!-- Info Section -->
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <img src="https://www.ancol.com/images/logo-unit/sea-world-logo.png" alt="Logo Sea World" class="img-fluid mb-3">
+        <h4 class="fw-bold">Sea World Ancol</h4>
+        <div class="d-flex align-items-center mb-2">
+          <span class="text-warning fs-5 me-2">★★★★★</span>
+          <span>(9 reviews)</span>
+        </div>
+        <a href="#rating-review" class="d-block text-primary mb-2">Lihat Review</a>
+        <p><i class="bi bi-info-circle info-icon"></i><a href="#" class="text-decoration-none text-primary">Jam Operasional</a></p>
+        <p><i class="bi bi-info-circle info-icon"></i><a href="#" class="text-decoration-none text-primary">Informasi Harga</a></p>
+        <a href="#" class="btn btn-primary w-100 mt-3">Beli Tiket</a>
+      </div>
+      <div class="col-md-8">
+        <h3 class="fw-bold mb-4">Sea World Ancol</h3>
+        <p>Sea World Ancol merupakan sebuah kawasan yang lengkap untuk memberikan hiburan dan pendidikan khususnya dunia laut...</p>
+        <p>Setiap tampilan akuarium atau wahana memiliki tema khusus untuk memberikan nuansa tersendiri dalam pesan yang disampaikannya...</p>
+        <p>Berbagai macam acara dan fasilitas penunjang lainnya pun kami hadirkan untuk kenyamanan dan kepuasan pengunjung...</p>
+        <p>Sea World Ancol senantiasa akan menghadirkan edukasi terkini mengenai dunia air pada umumnya dan kelautan khususnya...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feeding Time Section -->
+  <div class="container py-5">
+    <h2 class="text-center fw-bold mb-4">Jadwal Feeding Time with Divers – Sea World Ancol</h2>
+    <div class="text-center">
+      <img src="tabel.png" alt="Jadwal Feeding Time" class="img-fluid">
+    </div>
+  </div>
+
+  <!-- Carousel Section -->
+  <div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="fw-bold">Hal yang dapat dilakukan di Sea World Ancol</h2>
+      <a href="#" class="text-primary">Lihat Semua &gt;</a>
+    </div>
+    <h4 class="fw-semibold mb-4">Wahana</h4>
+    <div id="wahanaCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="GAMBARUTAMA.jpg" class="d-block w-100 carousel-img" alt="Antasena Tunnel">
+          <div class="mt-3">
+            <h5 class="fw-bold">Antasena Tunnel</h5>
+            <p>Kalian bisa merasakan dikelilingi oleh biota laut pada Main Aquarium Antasena Tunnel...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="wahana2.jpg" class="d-block w-100 carousel-img" alt="Kolam Sentuh">
+          <div class="mt-3">
+            <h5 class="fw-bold">Kolam Sentuh</h5>
+            <p>Tempat seru untuk berinteraksi langsung dengan biota laut seperti bintang laut dan lainnya...</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#wahanaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#wahanaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Rating & Review Section -->
+  <div class="container py-5" id="rating-review">
+    <h2 class="text-center fw-bold mb-3">Rating & Review Sea World Ancol</h2>
+    <h4 class="text-center mb-4">Tulis Review</h4>
+    <p class="text-center">Login ke akun Anda untuk menulis review.</p>
+    <div class="text-center mb-4">
+      <button class="btn btn-primary">Masuk</button>
+    </div>
+    <hr>
+    <div class="text-center mb-4">
+      <span class="review-stars fs-4">★★★★☆</span>
+      <p class="mt-2 mb-0">9 Review tentang Sea World Ancol</p>
+    </div>
+    <div class="review-card">
+      <span class="review-stars">★★★★★</span>
+      <h5 class="fw-bold mt-2">good place</h5>
+      <p>mau dong kak free tiket hihi</p>
+    </div>
+    <div class="review-card">
+      <span class="review-stars">★☆☆☆☆</span>
+      <h5 class="fw-bold mt-2">Annual Pass</h5>
+      <p>Beli tiket annual pass saat tiba disana, dan langsung disuruh scan di gate utk masuk. Tidak ada informasi dari petugas...</p>
+    </div>
+  </div>
+
+
+  <!-- Customer Care Section -->
+
+<!-- Customer Care Bar -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div style="background-color: #f5f5f5; padding: 8px 20px;">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <div class="d-flex align-items-center gap-2">
+      <span style="font-size: 14px; color: #333;">Customer Care Ancol :</span>
+      <a href="#" class="btn btn-sm btn-primary" style="font-size: 14px;">Hubungi Kami</a>
+    </div>
+    <div class="d-flex align-items-center gap-3">
+      <a href="#"><i class="fab fa-instagram" style="color: #333;"></i></a>
+      <a href="#"><i class="fab fa-facebook-f" style="color: #333;"></i></a>
+      <a href="#"><i class="fab fa-twitter" style="color: #333;"></i></a>
+      <a href="#"><i class="fab fa-youtube" style="color: #333;"></i></a>
+    </div>
+  </div>
+</div>
+
+  
+  <!-- Help Center Section -->
+  <div style="background-color: #cceeff; padding: 60px 0;">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div>
+        <h2 class="fw-bold mb-3">Ada yang bisa kami bantu?</h2>
+        <a href="#" class="btn btn-primary btn-lg">Pusat Bantuan</a>
+      </div>
+      <div>
+        <img src="helpcenter.png" alt="Customer Service Icon" class="img-fluid rounded-circle" style="max-width: 250px;">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer Ancol -->
+<footer style="background-color: white; padding: 40px 20px; font-family: sans-serif;">
+    <div class="container" style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+      
+      <!-- Logo -->
+      <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+        <img src="https://upload.wikimedia.org/wikipedia/id/thumb/9/94/Ancol_Logo.svg/2560px-Ancol_Logo.svg.png" alt="Logo Ancol" style="max-width: 120px;">
+      </div>
+  
+      <!-- Rekreasi -->
+      <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+        <strong>Rekreasi</strong>
+        <ul style="list-style: none; padding: 0; margin: 10px 0 0;">
+          <li><a href="#" style="text-decoration: none; color: #000;">Beli Tiket</a></li>
+          <li><a href="#" style="text-decoration: none; color: #000;">Promo</a></li>
+          <li><a href="#" style="text-decoration: none; color: #000;">Acara</a></li>
+          <li><a href="#" style="text-decoration: none; color: #000;">Pusat Bantuan</a></li>
+          <li><a href="#" style="text-decoration: none; color: #000;">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+  
+      <!-- Properti -->
+      <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+        <strong>Properti</strong>
+        <ul style="list-style: none; padding: 0; margin: 10px 0 0;">
+          <li><a href="#" style="text-decoration: none; color: #000;">Jelajah Properti</a></li>
+          <li><a href="#" style="text-decoration: none; color: #000;">Pengembangan</a></li>
+          <li><a href="#" style="text-decoration: none; color: #000;">Pengelolaan Properti</a></li>
+        </ul>
+      </div>
+  
+      <!-- Korporat -->
+      <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+        <strong>Korporat</strong>
+        <ul style="list-style: none; padding: 0; margin: 10px 0 0;">
+          <li><a href="#" style="text-decoration: none; color: #000;">Karir</a></li>
+          <li><a href="#" style="text-decoration: none; color: #000;">Berita</a></li>
+          <li><a href="#" style="text-decoration: none; color: #000;">CSR</a></li>
+          <li><a href="#" style="text-decoration: none; color: #000;">E-proc</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div style="text-align: center; padding-top: 20px; font-size: 14px; color: #333;">
+      Copyright 2020 Ancol Taman Impian. All Rights Reserved. Owned by PT Taman Impian Jaya Ancol.
+    </div>
+  </footer>
+
+  <!-- Tombol "Masuk" di Navbar jadi trigger modal -->
+  <html lang="id">
+    <head>
+      <meta charset="UTF-8">
+      <title>Contoh Modal</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+    
+    <!-- Tombol Pemicu -->
+    <div class="container mt-5 text-center">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk</button>
+    </div>
+    
+    <!-- Modal Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="loginModalLabel">Masuk</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <input type="email" class="form-control mb-3" placeholder="Email">
+              <input type="password" class="form-control mb-3" placeholder="Kata Sandi">
+              <button type="submit" class="btn btn-primary w-100">Masuk</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+</body>
+</html>
+
+
